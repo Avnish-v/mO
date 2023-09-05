@@ -14,17 +14,19 @@ module.exports = {
           100: "#60A3BA",
           200: "#518B9F",
           300: "#00B7FD",
+          400: "#60A3BA33",
         },
 
         text: {
           primary: {
-            50: "#80888F", //80888F
+            50: "#80888F",
             100: "#B4B4B4",
             200: "#585858",
             300: "#74777A",
           },
           secondary: {
             50: "#00B7FD",
+            100: "#00B7FD1A",
           },
           white: {
             50: "#FFFFFF",
@@ -37,9 +39,11 @@ module.exports = {
           sucess: {
             50: "#3BB56E",
             100: "#319F43",
+            200: "#D6ECD9",
           },
           warning: {
             50: "#FBC02D",
+            100: "#FF9900",
           },
           pink: {
             50: "#F266AB",
@@ -51,6 +55,9 @@ module.exports = {
             50: "#518B9F",
             100: "#60A3BA",
           },
+          gray: {
+            50: "#C9C7C7",
+          },
         },
       },
 
@@ -59,8 +66,20 @@ module.exports = {
         Roboto: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      //!shadow
       boxShadow: {
-        cutom: "5px 0 5px #00000033",
+        custom:
+          "5px 0 5px #00000033,3px 0px 14px #0000001F,8px 0px 10px #00000024 ",
+        pop: "3px 0  14px #0000001F",
+        provider: "0 1px 3px #0000004D",
+        button: "0px 1px 2px #0000004D",
+        sideBar: "4px 0px 4px #00000040",
+        navbar:
+          "0px 1px 2px  #0000004D,0px 1px 3px 1px #00000026 , -1px 0px 4px #00000026",
+        cardShadow:
+          "0px 1px 2px #0000004D,0px 1px 3px 1px #00000026,-1px 0px 4px #00000026",
+        projectSummary:
+          "0px 1px 2px #0000004D,0px 1px 3px 1px #00000026, -1px 0px 4px #00000026",
       },
       //!Font-size
       fontSize: {
@@ -75,7 +94,10 @@ module.exports = {
         "4xl": "28px",
         "5xl": "32px",
         "6xl": "40px",
-        "7xl": "92px",
+        "7xl": "94.1px",
+      },
+      screens: {
+        xs: "290px",
       },
     },
   },

@@ -14,6 +14,7 @@ interface TypographyProps {
     | "success"
     | "white"
     | "secondary"
+    | "gray"
     | string;
   variant?: number | 50 | 100 | 300 | 200 | 400;
   family?: "default" | "Roboto" | "poppins";
@@ -58,16 +59,23 @@ export const Typography: React.FC<TypographyProps> = ({
           default:
             return "";
         }
+
       default:
         return "";
     }
   };
   let getFont = (FontSize: string) => {
     switch (FontSize) {
+      case "xxs":
+        return "text-xxs";
+      case "xs":
+        return "text-xs";
       case "sm":
         return "text-sm";
       case "base":
         return "text-base";
+      case "lg":
+        return "text-lg";
       case "xl":
         return "text-xl";
       case "2xl":
@@ -91,7 +99,7 @@ export const Typography: React.FC<TypographyProps> = ({
     type: TypographyProps["type"],
     variant: TypographyProps["variant"],
     classname: string,
-    family: String | undefined
+    family: String
   ) => {
     let ColorVar = getColorVariants(variant, color);
     let font = getFont(FontSize);
@@ -107,7 +115,6 @@ export const Typography: React.FC<TypographyProps> = ({
         return null;
     }
   };
-
   const fontElement = getType(label, type, variant, classname, family);
   return <>{fontElement}</>;
 };

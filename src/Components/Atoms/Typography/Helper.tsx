@@ -43,25 +43,25 @@ export const HelperText = (props: HelperTextProps) => {
     let classes = "";
     switch (color) {
       case "primary":
-        classes = `text-dark-primary-500`;
+        classes = `text-text-primary-50`;
         break;
       case "secondary":
-        classes = `text-dark-secondary-400 `;
+        classes = `text-text-secondary-50 `;
         break;
       case "success":
-        classes = `text-success-500`;
+        classes = `text-text-success-500`;
         break;
       case "error":
-        classes = `text-danger-500`;
+        classes = `text-text-danger-500`;
         break;
       case "info":
-        classes = `text-info-500`;
+        classes = `text-text-gray-50`;
         break;
       case "warning":
         classes = `text-warning-500`;
         break;
       case "danger":
-        classes = `text-danger-500`;
+        classes = `text-text-danger-50`;
         break;
       case "default":
         classes = `text-dark-secondary-400`;
@@ -89,7 +89,7 @@ export const HelperText = (props: HelperTextProps) => {
     <div
       className={`${className} flex justify-start items-baseline ${
         iconPosition === "left" ? "flex-row " : "flex-row-reverse"
-      } gap-x-2 h-4 w-max ${
+      } gap-x-1  w-max ${
         customColor ? `text-[${customColor}]` : getColor(color)
       }`}
       style={{ ...style }}
