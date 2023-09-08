@@ -2,7 +2,7 @@ import React from "react";
 
 interface TypographyProps {
   type: "h1" | "h2" | "h3" | "h4" | "p";
-  label: string;
+  label: any;
   color?:
     | "default"
     | "primary"

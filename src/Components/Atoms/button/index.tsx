@@ -28,9 +28,9 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const sizeValues = {
-    small: "h-8 min-w-[144px]",
-    medium: "h-10 min-w-[144px]",
-    large: "h-12 min-w-[144px]",
+    small: "h-8 ",
+    medium: "h-10 ",
+    large: "h-12",
   };
 
   const colorValues = {

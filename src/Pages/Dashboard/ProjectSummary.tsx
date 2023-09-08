@@ -4,8 +4,8 @@ import { Button } from "../../Components/Atoms/button";
 const ProjectSummary = () => {
   let a = [1, 2, 3, 45, 3];
   return (
-    <div className=" flex flex-col  ">
-      <div className="w-[384px] h-[260px] mt-[9px] mb-[11px] flex  shadow-projectSummary  rounded-[5px] justify-evenly relative">
+    <div className=" flex flex-col xs:items-center lg:items-start xs:mr-[20px] md:mr-[0px] xs:mb-[20px] lg:mb-[0px]  ">
+      <div className="md:w-[384px] xs:w-[360px] h-[260px] mt-[9px] mb-[11px] flex  shadow-navbar  rounded-[5px] justify-evenly relative">
         {/* //!text */}
         <div className=" mt-[76px]">
           <div className="flex flex-col items-center">
@@ -86,8 +86,8 @@ const ProjectSummary = () => {
           variant={200}
         />
       </div>
-      <div className="w-[382px]   mt-[10px] flex flex-col  shadow-projectSummary rounded-[5px]">
-        <div className="flex justify-between  border-b-2 pt-[15px] pl-[15px] pr-[15px] pb-[5px]">
+      <div className="md:w-[382px] xs:w-[360px]  mt-[10px] flex flex-col  shadow-navbar rounded-[5px]">
+        <div className="flex justify-between  border-b-2 pt-[15px] lg:pl-[15px] pr-[15px] pb-[5px] xs:flex-row">
           <Typography
             type="p"
             label="project"
@@ -109,7 +109,7 @@ const ProjectSummary = () => {
           return (
             <div
               key={index}
-              className="flex justify-around border-b-2 border-text-gray-50 pt-[10px] pl-[10px] pr-[10px] pb-[5px]"
+              className="flex  justify-around border-b-2 border-text-gray-50 pt-[10px] lg:pl-[10px] lg:pr-[10px] pb-[5px]"
             >
               <img src="/Assets/Timer.svg" />
               <Typography
@@ -136,5 +136,4 @@ const ProjectSummary = () => {
     </div>
   );
 };
-
 export default ProjectSummary;

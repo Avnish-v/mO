@@ -15,6 +15,7 @@ module.exports = {
           200: "#518B9F",
           300: "#00B7FD",
           400: "#60A3BA33",
+          500: "#DFEDF1",
         },
 
         text: {
@@ -44,6 +45,7 @@ module.exports = {
           warning: {
             50: "#FBC02D",
             100: "#FF9900",
+            200: "#F8BD00",
           },
           pink: {
             50: "#F266AB",
@@ -76,10 +78,9 @@ module.exports = {
         sideBar: "4px 0px 4px #00000040",
         navbar:
           "0px 1px 2px  #0000004D,0px 1px 3px 1px #00000026 , -1px 0px 4px #00000026",
-        cardShadow:
-          "0px 1px 2px #0000004D,0px 1px 3px 1px #00000026,-1px 0px 4px #00000026",
-        projectSummary:
-          "0px 1px 2px #0000004D,0px 1px 3px 1px #00000026, -1px 0px 4px #00000026",
+        popUps:
+          "0px 5px 5px 0px #00000033 ,0px 3px 14px 0px #0000001F ,0px 8px 10px 0px #00000024",
+        hamburger: "4px 0px 4px 0px #00000040",
       },
       //!Font-size
       fontSize: {
